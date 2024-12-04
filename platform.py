@@ -5,7 +5,7 @@ def levels():
 x=0
 y=0
 files=input("give me the name of map .txt level")
-f1=open("map.txt","r")
+f1=open(files,"r")
 level=f1.read()
 f1.close()
 l=level.split("\n")
@@ -34,11 +34,11 @@ while ttrue:
        x=xback
        y=yback
        print("out of board")
-    elif x>len(l[y]):
+    elif x>len(l[y])-1:
        x=xback
        y=yback
        print("out of board")
-    elif y>len(l):
+    elif y>len(l)-1:
        x=xback
        y=yback
        print("out of board")
